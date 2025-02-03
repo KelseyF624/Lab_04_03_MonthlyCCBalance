@@ -5,6 +5,6 @@ public class MonthyBalance {
         int CREDIT_BALANCE = 5000;
         double interestRate = .17;
         double sum = interestRate * CREDIT_BALANCE;
-        System.out.println("Monthly balance is $" + sum);
+        System.out.println("Monthly balance is $" + sum +" dollars.");
         }
     }
