@@ -4,9 +4,9 @@ public class MonthyBalance {
     public static void main(String[] args) {
         int CREDIT_BALANCE = 5000;
         double interestRate = .17;
-        double sum = interestRate * CREDIT_BALANCE;
-        double interest = sum * interestRate;
-        System.out.println("Your interest due after one month is " + sum +" dollars.");
-        System.out.println ("Your interest due after two months is " + interest +" dollars.");
+        double firstMonth = CREDIT_BALANCE + (CREDIT_BALANCE * interestRate);
+        double secondMonth = firstMonth + (firstMonth * interestRate);
+        System.out.println("Your interest due after one month is " + firstMonth +" dollars.");
+        System.out.println ("Your interest due after two months is " + secondMonth +" dollars.");
         }
     }
